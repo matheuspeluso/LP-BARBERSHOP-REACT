@@ -1,0 +1,6 @@
+// src/partials/_header.scss
+@use './color' as color;
+
+h1 {
+  color: color.$red-normal;
+}

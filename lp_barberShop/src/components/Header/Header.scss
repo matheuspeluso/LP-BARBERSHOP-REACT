@@ -1,0 +1,35 @@
+@use '../../partials/color' as color;
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom, rgba(6,18,30,0.1), #06121e), url("../../assets/bg.svg");
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    .links{
+        color: color.$white-normal;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 100px;
+    }
+
+    .logo{
+        margin-top: 100px;
+        font-size: 50px;
+        color: color.$white-normal;
+        font-weight: bold;
+    }
+
+    .agendar-horario{
+        margin-top: 100px;
+    }
+}
+
+

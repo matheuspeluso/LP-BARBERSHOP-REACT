@@ -1,0 +1,16 @@
+@use '../../../partials/color' as color;
+
+.lollowBtn{
+    padding: 15px 25px;
+    background-color: transparent;
+    border: 2px solid color.$white-normal;
+    color: color.$white-normal;
+    font-weight: bold;
+    border-radius: 5px;
+
+    &:hover{
+        background-color: color.$yellow_normal;
+        border: none;
+        color: color.$primary-dark;
+    }
+}
