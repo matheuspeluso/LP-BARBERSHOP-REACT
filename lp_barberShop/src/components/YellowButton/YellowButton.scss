@@ -1,0 +1,19 @@
+@use '../../partials/color' as color;
+
+.yellow-btn{
+    padding: 15px 25px;
+    max-width: 200px;
+    max-height: 100px;
+    background-color: color.$yellow_normal;
+    border: none;
+    color: color.$primary-dark;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    outline: none;
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
