@@ -67,4 +67,27 @@
 }
 
 
+@media screen and (max-width:320px){
+    /*para telas menores que 320px*/
+
+    .container-pai{
+        
+
+        .container{
+            flex-direction: column;
+    
+            .agendar-horario{
+                display: none;
+            }
+    
+            .links{
+                margin-top: 10px;
+            }
+        }
+    }
+
+
+
+}
+
 
