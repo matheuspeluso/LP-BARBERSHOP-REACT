@@ -67,7 +67,7 @@
 }
 
 
-@media screen and (max-width:320px){
+@media screen and (max-width:428px){
     /*para telas menores que 320px*/
 
     .container-pai{
@@ -83,10 +83,24 @@
             .links{
                 margin-top: 10px;
             }
+
+            .logo{
+                text-align: center;
+            }
+        }
+
+        .chamada{
+            .title{
+                font-size: 25px;
+                padding: 0 30px;
+            }
+
+            .horario{
+                padding: 0 30px;
+                font-size: 18px;
+            }
         }
     }
-
-
 
 }
 
