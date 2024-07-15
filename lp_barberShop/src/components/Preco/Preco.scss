@@ -1,0 +1,9 @@
+@use '../../partials/color' as color;
+
+.container-preco{
+    background-color: color.$yellow_normal ;
+    padding: 5px 10px;
+    color: color.$black-dark;
+    font-weight: bold;
+    font-size: 18px;
+}

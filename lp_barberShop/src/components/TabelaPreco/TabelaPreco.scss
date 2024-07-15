@@ -1,0 +1,13 @@
+@use '../../partials/color' as color;
+
+.container-tabela{
+    width: 1200px;
+    margin: 0 auto;
+    
+    .servicos{
+        width: inherit;
+        display: flex;
+        justify-content: space-around; /* Espaça igualmente os itens */
+        flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    }
+}
