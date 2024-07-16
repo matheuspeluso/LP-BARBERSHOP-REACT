@@ -7,7 +7,8 @@
     position: relative;
 
     .card {
-        width: 100%;
+        width: 55%;
+        min-width: 300px;
         height: auto;
         border-radius: 30px;
         overflow: hidden;
@@ -32,13 +33,15 @@
             position: absolute;
             bottom: 0;
             background-color: color.$black-dark;
-            width: 100%;
+            width: inherit;
+            min-width: 300px;
             text-align: center;
             padding: 20px;
             border-radius: 0 0 30px 30px;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
+            
 
             .p {
                 margin-right: 10px;
@@ -55,9 +58,44 @@
     }
 }
 
+
+@media screen and (max-width: 430px) {
+    .container-cardServico {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .card{
+            width: 100%;
+        }
+
+    }
+}
+
 @media screen and (max-width: 768px) {
     .container-cardServico {
-        flex: 1 1 45%; /* Ajusta a largura dos cards para caber melhor em tablets */
-        margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        .card{
+            width: 40%;
+            margin: 20px 0 20px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .container-cardServico {
+        display: flex;
+        justify-content: center;
+        
+
+        .card{
+            width: 40%;
+        }
     }
 }
