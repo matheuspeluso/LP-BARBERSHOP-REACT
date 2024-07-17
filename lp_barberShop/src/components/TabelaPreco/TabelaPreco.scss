@@ -9,6 +9,9 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;  /* Permite quebra de linha se necessário */
+        height: auto;
+        padding: 20px;
+        margin-bottom: 20px;
     }
 }
 
