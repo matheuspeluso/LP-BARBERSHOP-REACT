@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   width: 100vw;
-  min-height: 500px;
+  min-height: 800px;
   max-height: 1200px;
   height: 60vh;
   background-size: cover;
@@ -61,6 +61,20 @@
   color: #FFF;
 }
 
+@media screen and (max-width: 810px) {
+  .container-pai {
+    min-height: 450px;
+    max-height: 600px;
+  }
+  .container-pai .chamada .title {
+    font-size: 30px;
+    padding: 0 20px;
+  }
+  .container-pai .chamada .horario {
+    padding: 0 20px;
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .container-pai {
     min-height: 400px;
@@ -106,22 +120,26 @@
     font-size: 15px;
   }
 }
-@media screen and (max-width: 390px) {
-  .container-pai {
-    min-height: 470px;
-    height: auto;
-  }
+@media screen and (max-width: 320px) {
   .container-pai .container .logo {
     margin-top: 20px;
     text-align: center;
   }
-  .container-pai .chamada {
-    padding: 20px;
-  }
   .container-pai .chamada .title {
-    font-size: 18px;
+    font-size: 10px;
+    margin: 0 auto;
   }
   .container-pai .chamada .horario {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .container-pai .chamada .title {
+    font-size: 30px;
+    padding: 0 20px;
+  }
+  .container-pai .chamada .horario {
+    padding: 0 20px;
+    font-size: 20px;
   }
 }/*# sourceMappingURL=Header.css.map */
