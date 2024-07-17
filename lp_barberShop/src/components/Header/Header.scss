@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-position: 50% 0;
     width: 100vw;
-    min-height: 500px;
+    min-height: 800px;
     max-height: 1200px;
     height: 60vh;
     background-size: cover;
@@ -69,76 +69,11 @@
     }
 }
 
-
-@media screen and (max-width:631px){
-
-    .container-pai{
-        height: 100vh;
-        width: 100vw;
-        
-
-        .container{
-            flex-direction: column;
-    
-            .agendar-horario{
-                display: none;
-            }
-    
-            .links{
-                margin-top: 10px;
-            }
-
-            .logo{
-                margin-top: 20px;
-                text-align: center;
-            }
-        }
-
-        .chamada{
-            .title{
-                font-size: 20px;
-                padding: 0 15px;
-            }
-
-            .horario{
-                padding: 0 15px;
-                font-size: 15px;
-            }
-        }
-    }
-
-}
-
-@media screen and (max-width:320px){
-
-    .container-pai{
-        
-        .container{
-    
-            .logo{
-                margin-top: 20px;
-                text-align: center;
-            }
-        }
-
-        .chamada{
-            .title{
-                font-size: 10px;
-                margin: 0 auto;
-            }
-
-            .horario{
-                padding: 0 15px;
-                font-size: 15px;
-            }
-        }
-    }
-
-}
-
 @media screen and (max-width:810px){
     
     .container-pai{
+        min-height: 450px;
+        max-height: 600px;
         .chamada{
             .title{
                 font-size: 30px;
@@ -154,4 +89,101 @@
 
 }
 
+
+
+@media screen and (max-width:631px){
+
+    .container-pai{
+        height: 100vh;
+        width: 100vw;
+        
+
+        .container{
+            flex-direction: column;
+    
+            .agendar-horario{
+                display: none;
+            }    
+    
+            .links{
+                margin-top: 10px;
+            }    
+
+            .logo{
+                margin-top: 20px;
+                text-align: center;
+            }    
+        }    
+
+        .chamada{
+            .title{
+                font-size: 20px;
+                padding: 0 15px;
+            }    
+
+            .horario{
+                padding: 0 15px;
+                font-size: 15px;
+            }    
+        }    
+    }    
+
+}    
+
+@media screen and (max-width:428px){
+
+    .container-pai{
+        min-height: 250px;
+        max-height: 450px;
+        
+        .container{
+    
+            .logo{
+                margin-top: 20px;
+                text-align: center;
+            }    
+        }    
+
+        .chamada{
+            .title{
+                font-size: 22px;
+                margin: 10px 10px 10px 10px;
+            }    
+
+            .horario{
+                padding: 0 15px;
+                font-size: 18px;
+            }    
+        }    
+    }    
+
+}    
+@media screen and (max-width:320px){
+
+    .container-pai{
+        min-height: 200px;
+        max-height: 450px;
+        
+        .container{
+    
+            .logo{
+                margin-top: 20px;
+                text-align: center;
+            }    
+        }    
+
+        .chamada{
+            .title{
+                font-size: 18px;
+                margin: 10px 10px 10px 10px;
+            }    
+
+            .horario{
+                padding: 0 15px;
+                font-size: 15px;
+            }    
+        }    
+    }    
+
+}    
 
