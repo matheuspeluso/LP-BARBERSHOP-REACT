@@ -23,7 +23,17 @@
 
 @media screen and (max-width:428px){
     .container-descricao{
-        width: 350px;
+        width: 90vw;
         text-align: center;
+
+        .title{
+            font-size: 23px;
+        }
+    
+        .text{
+            margin-top: 20px;
+            font-size: 17px;
+            color: color.$secondary-dark;
+        }
     }
 }
