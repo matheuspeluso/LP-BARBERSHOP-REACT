@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-pai {
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../../assets/bg.svg");
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  width: 100vw;
+  min-height: 500px;
+  max-height: 1200px;
+  height: 60vh;
+  background-size: cover;
+}
+.container-pai .container {
+  display: flex;
+  justify-content: space-around;
+}
+.container-pai .container .links {
+  color: #FFF;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 100px;
+}
+.container-pai .container .links .icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+.container-pai .container .links .icon:hover {
+  color: #f8de48;
+}
+.container-pai .container .logo {
+  margin-top: 40px;
+}
+.container-pai .container .logo img {
+  width: 150px;
+}
+.container-pai .container .agendar-horario {
+  margin-top: 100px;
+  margin-right: 3%;
+}
+.container-pai .chamada {
+  text-align: center;
+}
+.container-pai .chamada .el {
+  margin-bottom: 20px;
+}
+.container-pai .chamada .horario {
+  color: #FFF;
+  font-size: 20px;
+}
+.container-pai .chamada .title {
+  margin-top: 30px;
+  font-size: 40px;
+  color: #FFF;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-pai {
+    min-height: 400px;
+    height: auto;
+  }
+  .container-pai .chamada {
+    padding: 50px;
+  }
+  .container-pai .chamada .title {
+    font-size: 30px;
+    padding: 0 20px;
+  }
+  .container-pai .chamada .horario {
+    padding: 0 20px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 631px) {
+  .container-pai {
+    min-height: 500px;
+    width: 100vw;
+    height: auto;
+  }
+  .container-pai .container {
+    flex-direction: column;
+  }
+  .container-pai .container .agendar-horario {
+    display: none;
+  }
+  .container-pai .container .links {
+    margin-top: 10px;
+  }
+  .container-pai .container .logo {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .container-pai .chamada .title {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+  .container-pai .chamada .horario {
+    padding: 0 15px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .container-pai {
+    min-height: 470px;
+    height: auto;
+  }
+  .container-pai .container .logo {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .container-pai .chamada {
+    padding: 20px;
+  }
+  .container-pai .chamada .title {
+    font-size: 18px;
+  }
+  .container-pai .chamada .horario {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=Header.css.map */

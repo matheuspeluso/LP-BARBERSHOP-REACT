@@ -1,0 +1,51 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-tabela {
+  max-width: 100%; /* Garante que o contêiner não exceda a largura da tela */
+  margin: 0 auto;
+  padding: 0 20px; /* Adiciona algum padding para evitar que o conteúdo encoste nas bordas */
+}
+.container-tabela .servicos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Permite quebra de linha se necessário */
+}
+
+@media screen and (max-width: 810px) {
+  .container-tabela {
+    width: 100%;
+  }
+  .servicos {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .servicos {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container-cardServico {
+    flex: 1 1 45%; /* Ajusta a largura dos cards para caber melhor em tablets */
+    margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
+  }
+}
+@media screen and (max-width: 428px) {
+  .container-tabela {
+    width: 100%;
+  }
+  .servicos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centraliza os itens */
+  }
+  .container-cardServico {
+    flex: 1 1 100%;
+    margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
+  }
+}/*# sourceMappingURL=TabelaPreco.css.map */

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.lollowBtn {
+  padding: 15px 25px;
+  max-width: 200px;
+  max-height: 100px;
+  background-color: transparent;
+  border: 2px solid #FFF;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.6s ease; /* Transição suave para todas as propriedades */
+}
+.lollowBtn:hover {
+  background-color: #f8de48;
+  border: 2px solid #040f1a;
+  color: #040f1a;
+}/*# sourceMappingURL=LollowButton.css.map */

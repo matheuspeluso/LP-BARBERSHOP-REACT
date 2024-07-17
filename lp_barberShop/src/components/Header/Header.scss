@@ -69,12 +69,33 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .container-pai {
+        min-height: 400px;
+        height: auto;
+
+        .chamada {
+            padding: 50px;
+
+            .title {
+                font-size: 30px; // Definido aqui
+                padding: 0 20px;
+            }
+
+            .horario {
+                padding: 0 20px;
+                font-size: 20px;
+            }
+        }
+    }
+}
 
 @media screen and (max-width:631px){
 
     .container-pai{
-        height: 100vh;
+        min-height: 500px;
         width: 100vw;
+        height: auto;
         
 
         .container{
@@ -109,49 +130,30 @@
 
 }
 
-@media screen and (max-width:320px){
 
-    .container-pai{
-        
-        .container{
-    
-            .logo{
+
+@media screen and (max-width: 390px) {
+    .container-pai {
+        min-height: 470px;
+        height: auto;
+
+        .container {
+            .logo {
                 margin-top: 20px;
                 text-align: center;
             }
         }
 
-        .chamada{
-            .title{
-                font-size: 10px;
-                margin: 0 auto;
+        .chamada {
+            padding: 20px;
+
+            .title {
+                font-size: 18px; // Definido aqui
             }
 
-            .horario{
-                padding: 0 15px;
+            .horario {
                 font-size: 15px;
             }
         }
     }
-
 }
-
-@media screen and (max-width:810px){
-    
-    .container-pai{
-        .chamada{
-            .title{
-                font-size: 30px;
-                padding: 0 20px;
-            }
-
-            .horario{
-                padding: 0 20px;
-                font-size: 20px;
-            }
-        }
-    }
-
-}
-
-

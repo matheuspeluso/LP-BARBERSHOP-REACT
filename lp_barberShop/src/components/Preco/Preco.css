@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-preco {
+  background-color: #f8de48;
+  padding: 5px 10px;
+  color: #161617;
+  font-weight: bold;
+  font-size: 18px;
+}/*# sourceMappingURL=Preco.css.map */
