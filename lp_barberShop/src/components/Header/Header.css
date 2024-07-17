@@ -11,9 +11,8 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   width: 100vw;
-  min-height: 800px;
   max-height: 1200px;
-  height: 60vh;
+  height: auto;
   background-size: cover;
 }
 .container-pai .container {
@@ -47,6 +46,7 @@
 }
 .container-pai .chamada {
   text-align: center;
+  padding: 50px;
 }
 .container-pai .chamada .el {
   margin-bottom: 20px;
@@ -61,20 +61,6 @@
   color: #FFF;
 }
 
-@media screen and (max-width: 810px) {
-  .container-pai {
-    min-height: 450px;
-    max-height: 600px;
-  }
-  .container-pai .chamada .title {
-    font-size: 30px;
-    padding: 0 20px;
-  }
-  .container-pai .chamada .horario {
-    padding: 0 20px;
-    font-size: 20px;
-  }
-}
 @media screen and (max-width: 1024px) {
   .container-pai {
     min-height: 400px;
@@ -121,6 +107,11 @@
   }
 }
 @media screen and (max-width: 320px) {
+  .container-pai {
+    min-height: 500px;
+    width: 100vw;
+    height: auto;
+  }
   .container-pai .container .logo {
     margin-top: 20px;
     text-align: center;
@@ -131,15 +122,5 @@
   }
   .container-pai .chamada .horario {
     font-size: 15px;
-  }
-}
-@media screen and (max-width: 810px) {
-  .container-pai .chamada .title {
-    font-size: 30px;
-    padding: 0 20px;
-  }
-  .container-pai .chamada .horario {
-    padding: 0 20px;
-    font-size: 20px;
   }
 }/*# sourceMappingURL=Header.css.map */
