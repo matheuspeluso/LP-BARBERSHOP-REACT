@@ -2,7 +2,7 @@ import React from 'react';
 import "./CardsServico.scss"
 import Preco from '../Preco/Preco';
 
-const CardsServico = ({imagem, text, info}) => {
+const CardsServico = ({imagem, text, info,preco}) => {
   return (
     <div className='container-cardServico'>
         <div className="card">
@@ -11,7 +11,7 @@ const CardsServico = ({imagem, text, info}) => {
             </div>
             <div className="box-info">
                 <p className='p'>{info}</p>
-                <Preco text="R$18,00"/>
+                <Preco text={preco}/>
             </div>
         </div>
     </div>
