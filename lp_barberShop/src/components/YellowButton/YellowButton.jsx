@@ -1,8 +1,8 @@
 import "./YellowButton.scss"
 
-const YellowButton = ({id,text}) => {
+const YellowButton = ({id,text,click}) => {
   return (
-    <button className='yellow-btn' id={id}>
+    <button className='yellow-btn' id={id} onClick={click}>
         {text}
     </button>
   )

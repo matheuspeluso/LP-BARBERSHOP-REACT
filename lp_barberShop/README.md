@@ -10,6 +10,7 @@
 ## 🔨Ferramentas
 
 - React.JS
+-- Scss
 
 
 ## Como executar o projeto
