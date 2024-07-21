@@ -1,4 +1,3 @@
-import LollowButton from "../LollowButton/LollowButton.jsx";
 import YellowButton from "../YellowButton/YellowButton.jsx";
 import Logo from "../../assets/logo.png"
 

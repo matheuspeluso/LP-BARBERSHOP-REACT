@@ -17,6 +17,10 @@
         margin-bottom: 1.2rem;
         cursor: pointer;
 
+        i{
+            color: color.$white-normal;
+        }
+
         i:hover{
             color: color.$yellow_normal;
         }
