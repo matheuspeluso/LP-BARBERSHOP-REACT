@@ -8,8 +8,10 @@
 **LP BARBERSHOP** é uma landing page desenvolvida em ReactJS para uma barbearia. Criado com o objetivo de aprimorar meus conhecimentos na stack React, este projeto exemplifica design responsivo e práticas modernas de desenvolvimento web. Ideal para quem busca explorar e aprender mais sobre ReactJS enquanto cria uma presença digital atraente para negócios locais.
 
 ## 🏜️ Fotos do projeto
-<img src="./src/assets/prints/1.png" width="300px">
-<img src="./src/assets/prints/2.png" width="300px">
+<div align="center">
+    <img src="./src/assets/prints/1.png" width="300px">
+    <img src="./src/assets/prints/2.png" width="300px">
+</div>
 
 
 ## 🔨Ferramentas
