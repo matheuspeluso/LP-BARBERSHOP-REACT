@@ -5,6 +5,7 @@ import TabelaPreco from "./components/TabelaPreco/TabelaPreco";
 import Footer from "./components/Footer/Footer";
 
 
+
 function App() {
   return (
     <>

@@ -33,10 +33,10 @@ const Footer = () => {
         <div className="logo-barber">
                 <img src={Logo} alt="BarberShop" />
         </div>
-        <di className="copy">
+        <div className="copy">
             <p>Copyright 2023 | LP-BARBERSHOP - Todos direitos reservados.</p>
             <p>Site Desenvolvido por : Dev Matheus Peluso</p>
-        </di>
+        </div>
 
     </div>
   )
