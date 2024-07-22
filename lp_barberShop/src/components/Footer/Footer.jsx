@@ -15,6 +15,9 @@ const Footer = () => {
     window.open('https://www.youtube.com/', '_blank');
   };
 
+  const currentYear = new Date().getFullYear();
+
+
 
   return (
     <div className="container-footer">
@@ -34,7 +37,7 @@ const Footer = () => {
                 <img src={Logo} alt="BarberShop" />
         </div>
         <div className="copy">
-            <p>Copyright 2023 | LP-BARBERSHOP - Todos direitos reservados.</p>
+            <p>Copyright {currentYear} | LP-BARBERSHOP - Todos direitos reservados.</p>
             <p>Site Desenvolvido por : Dev Matheus Peluso</p>
         </div>
 
