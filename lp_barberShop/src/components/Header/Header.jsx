@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   const redirectContact = () => {
-    window.open('https://web.whatsapp.com/', '_blank');
+    window.open('https://w.app/yipznG', '_blank');
   };
 
   return (
