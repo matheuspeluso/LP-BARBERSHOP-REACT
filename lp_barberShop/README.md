@@ -17,7 +17,8 @@
 ## 🔨Ferramentas
 
 - React.JS
--- Scss
+- Scss
+- SupaBase
 
 
 ## Como executar o projeto
@@ -30,12 +31,6 @@
 
     #instalação das dependencias usando npm 
     npm install 
-
-    #caso der algum erro no json-server rode também 
-    npm install json-server
-
-    #para executar o servidor 
-    npm run server
 
     #para executar o sistema 
     npm run dev
