@@ -16,22 +16,22 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '16'  # use a versão do Node.js compatível com o seu projeto
+        node-version: '20'  # use a versão do Node.js compatível com o seu projeto
 
     - name: Install dependencies
       run: npm install
-      working-directory: LP-BARBERSHOP-REACT/lp_barberShop
+      working-directory: LP-BARBERSHOP-REACT  # Atualize o diretório
 
     - name: Build project
       run: npm run build
-      working-directory: LP-BARBERSHOP-REACT/lp_barberShop
+      working-directory: LP-BARBERSHOP-REACT  # Atualize o diretório
 
     - name: Install Vercel CLI
       run: npm install -g vercel
 
     - name: Deploy to Vercel
       run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
-      working-directory: LP-BARBERSHOP-REACT/lp_barberShop
+      working-directory: LP-BARBERSHOP-REACT  # Atualize o diretório
       env:
         VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
         VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
