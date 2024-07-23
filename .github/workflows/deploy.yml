@@ -11,12 +11,15 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3  # Atualize para a versão mais recente se disponível
+      uses: actions/checkout@v3  # Use a versão mais recente
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3  # Atualize para a versão mais recente se disponível
+      uses: actions/setup-node@v3  # Use a versão mais recente
       with:
-        node-version: '20.14.0'  # Use a versão do Node.js compatível com o seu projeto
+        node-version: '20'  # Mantenha a versão do Node.js compatível com seu projeto, se necessário
+
+    - name: Verify Node.js Version
+      run: node --version  # Verifique a versão do Node.js instalada
 
     - name: Install dependencies
       run: npm install
