@@ -1,5 +1,4 @@
-
-  name: Deploy to Vercel
+name: Deploy to Vercel
 
 on:
   push:
@@ -13,9 +12,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-
-    - name: Change directory to project folder
-      run: cd LP-BARBERSHOP-REACT/lp_barberShop
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
@@ -31,7 +27,7 @@ jobs:
       working-directory: LP-BARBERSHOP-REACT/lp_barberShop
 
     - name: Deploy to Vercel
-      run: vercel --prod
+      run: npx vercel --prod
       working-directory: LP-BARBERSHOP-REACT/lp_barberShop
       env:
         VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
