@@ -1,0 +1,39 @@
+
+  name: Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - v3-using-supabase  # substitua pelo nome da sua branch de deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Change directory to project folder
+      run: cd LP-BARBERSHOP-REACT/lp_barberShop
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'  # use a versão do Node.js compatível com o seu projeto
+
+    - name: Install dependencies
+      run: npm install
+      working-directory: LP-BARBERSHOP-REACT/lp_barberShop
+
+    - name: Build project
+      run: npm run build
+      working-directory: LP-BARBERSHOP-REACT/lp_barberShop
+
+    - name: Deploy to Vercel
+      run: vercel --prod
+      working-directory: LP-BARBERSHOP-REACT/lp_barberShop
+      env:
+        VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+        VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
