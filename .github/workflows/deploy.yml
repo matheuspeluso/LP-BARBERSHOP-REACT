@@ -1,4 +1,5 @@
 name: Deploy to Vercel
+
 on:
   push:
     branches:
@@ -10,27 +11,27 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3  # Atualize para a versão mais recente se disponível
 
     - name: Setup Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3  # Atualize para a versão mais recente se disponível
       with:
-        node-version: '20'  # use a versão do Node.js compatível com o seu projeto
+        node-version: '20'  # Use a versão do Node.js compatível com o seu projeto
 
     - name: Install dependencies
       run: npm install
-      working-directory: LP-BARBERSHOP-REACT  # Atualize o diretório
+      working-directory: .  # Diretório da raiz do repositório
 
     - name: Build project
       run: npm run build
-      working-directory: LP-BARBERSHOP-REACT  # Atualize o diretório
+      working-directory: .  # Diretório da raiz do repositório
 
     - name: Install Vercel CLI
       run: npm install -g vercel
 
     - name: Deploy to Vercel
       run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
-      working-directory: LP-BARBERSHOP-REACT  # Atualize o diretório
+      working-directory: .  # Diretório da raiz do repositório
       env:
         VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
         VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
