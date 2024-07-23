@@ -1,11 +1,9 @@
-
-name: Deploy to Vercel
+  name: Deploy to Vercel
 
 on:
   push:
     branches:
-     - v3-using-supabase # Substitua por sua branch de deploy
-
+        - v3-using-supabase # Substitua por sua branch de deploy
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
