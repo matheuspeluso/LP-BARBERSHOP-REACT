@@ -26,8 +26,11 @@ jobs:
       run: npm run build
       working-directory: LP-BARBERSHOP-REACT/lp_barberShop
 
+    - name: Install Vercel CLI
+      run: npm install -g vercel
+
     - name: Deploy to Vercel
-      run: npx vercel --prod
+      run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
       working-directory: LP-BARBERSHOP-REACT/lp_barberShop
       env:
         VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
