@@ -1,9 +1,10 @@
+
 name: Deploy to Vercel
 
 on:
   push:
     branches:
-      - v3-using-supabase # Substitua por sua branch de deploy
+     - v3-using-supabase # Substitua por sua branch de deploy
 
 jobs:
   build-and-deploy:
@@ -11,12 +12,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: '16' # Certifique-se de usar a versão do Node.js compatível com seu projeto
+        node-version: '20' # Certifique-se de usar a versão do Node.js compatível com seu projeto
 
     - name: Install dependencies
       run: npm install
