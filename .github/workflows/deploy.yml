@@ -16,7 +16,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3  # Atualize para a versão mais recente se disponível
       with:
-        node-version: '20'  # Use a versão do Node.js compatível com o seu projeto
+        node-version: '20.14.0'  # Use a versão do Node.js compatível com o seu projeto
 
     - name: Install dependencies
       run: npm install
