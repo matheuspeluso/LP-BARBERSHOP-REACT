@@ -4,7 +4,7 @@ import "./Preco.scss"
 const Preco = ({text}) => {
   return (
     <div className='container-preco'>
-        <p>{text}</p>
+        <p className='txt-preco'>{text}</p>
     </div>
   )
 }
